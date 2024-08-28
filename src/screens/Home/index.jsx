@@ -1,14 +1,12 @@
-import { View, Text, TouchableOpacity } from 'react-native'
-import { useNavigation } from '@react-navigation/native'
+import { View, Text,  } from 'react-native'
 import styles from './styles'
+import Title from '../../components/Tittle'
+import TouchButton from '../../components/TouchButton'
 export default function Home() {
-  const navigation = useNavigation()
   return (
     <View style={styles.container}>
-      <Text style={styles.tittle}>Home Screen</Text>
-      <TouchableOpacity onPress={() => navigation.navigate('Totoro')}>
-        <Text style={styles.text}>Go to Totoro</Text>
-      </TouchableOpacity>
+      <Title title="Home Screen" />
+      <TouchButton route="Totoro" text="Go to Totoroo"  />
     </View>
   )
 }
