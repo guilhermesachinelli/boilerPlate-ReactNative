@@ -2,12 +2,12 @@ import { View, Text,  } from 'react-native'
 import styles from './styles'
 import Title from '../../components/Tittle'
 import TouchButton from '../../components/TouchButton'
-export default function Home() {
+export default function Ghibli() {
   return (
     <View style={styles.container}>
-      <Title title="Home Screen" />
+      <Title title="Ghibli Screen" />
       <TouchButton route="Totoro" text="Go to Totoroo"  />
-      <TouchButton route="Ghibli" text = "Go to Ghibli" />
+      <TouchButton route="Home" text="Go to Home"  />
     </View>
   )
 }
